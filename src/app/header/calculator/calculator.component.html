@@ -1,0 +1,83 @@
+<div class="card-section">
+  <div class="card">
+    <div class="card-title">
+      <h3>Eligibilty Calculator</h3>
+    </div>
+
+    <div class="monthly-income">
+      <p>Monthly Income</p>
+      <h2>
+        {{
+          monthlyIncomeSlider.value | currency: "INR":"symbol-narrow":"6.0-0"
+        }}
+      </h2>
+      <div class="slidecontainer">
+        <input
+          type="range"
+          min="100000"
+          max="300000"
+          value="0"
+          class="slider"
+          id="slider"
+          #monthlyIncomeSlider
+          (input)="getSliderValue(monthlyIncomeSlider)"
+        />
+      </div>
+      <div class="sliderLimits">
+        <small>{{
+          monthlyIncomeSlider.min | currency: "INR":"symbol-narrow":"6.0-0"
+        }}</small>
+        <small>{{
+          monthlyIncomeSlider.max | currency: "INR":"symbol-narrow":"6.0-0"
+        }}</small>
+      </div>
+    </div>
+
+    <div class="monthly-exxpense">
+      <p>Monthly Expense</p>
+      <h2>
+        {{ monthlyExpense.value | currency: "INR":"symbol-narrow":"1.0-0" }}
+      </h2>
+      <div class="slidecontainer">
+        <input
+          type="range"
+          min="0"
+          max="100000"
+          value="0"
+          class="slider"
+          #monthlyExpense
+          (input)="getSliderValue(monthlyExpense)"
+        />
+      </div>
+    </div>
+
+    <div class="repayment-tenure">
+      <p>Repayment Tenure</p>
+      <div class="select-box">
+        <select class="tenure">
+          <option>6 Months</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="existing-loans">
+      <div><p>Do you have any existing loans ?</p></div>
+      <label class="switch">
+        <input type="checkbox" checked />
+        <span class="slider-box round"></span>
+      </label>
+    </div>
+
+    <div class="emi-existing-loan">
+      <p>EMI of existing loan (optional)</p>
+      <input
+        type="text"
+        placeholder="{{ '15000' | currency: 'INR':'symbol-narrow':'5.0-0' }}"
+      />
+    </div>
+  </div>
+
+  <div class="card-right-section">
+    <app-calc-right-section></app-calc-right-section>
+  </div>
+</div>

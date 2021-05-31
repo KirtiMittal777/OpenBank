@@ -1,0 +1,23 @@
+<div
+  class="header-container"
+  #header
+  (scroll)="onScroll()"
+  [ngClass]="{ 'white-background': isScrollThresholdReached }"
+>
+  <div class="header-logo">
+    <img alt="loan-calculation-logo" src="/assets/images/logo.png" />
+  </div>
+  <div class="header-links">
+    <div><a href="#">Products</a></div>
+    <div><a href="#">Solutions</a></div>
+    <div><a href="#">Pricing</a></div>
+    <div><button class="btn btn-login">Login</button></div>
+    <div><button class="btn btn-get-started">Get Started</button></div>
+  </div>
+</div>
+
+<div class="overlay-section">
+  <app-header-overlay></app-header-overlay>
+  <app-calculator></app-calculator>
+  <div class="overlay"></div>
+</div>

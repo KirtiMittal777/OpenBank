@@ -1,0 +1,10 @@
+.footer-overlay {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-column-gap: 2%;
+  background-image: url("/assets/images/sol_wave_bg.svg");
+}
+
+.footer-overlay > img {
+  width: 100%;
+}

@@ -1,0 +1,11 @@
+.overlay {
+    left: 40%;
+    height: 70em;
+    width: 100em;
+    background-repeat: no-repeat;
+    background-image: url("/assets/images/circle.svg");
+    top: -30%;
+    position: absolute;
+    background-size: contain;
+  }
+  

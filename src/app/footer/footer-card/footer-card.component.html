@@ -1,0 +1,16 @@
+<div class="cards-section">
+  <div class="cards" *ngFor="let item of cardData">
+    <div>
+      <img src="/assets/images/{{ item.imgName }}" />
+    </div>
+
+    <div>
+      <h4>{{ item.title }}</h4>
+    </div>
+    <div>
+      <p>
+        {{ item.description }}
+      </p>
+    </div>
+  </div>
+</div>

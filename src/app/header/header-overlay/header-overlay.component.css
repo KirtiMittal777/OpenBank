@@ -1,0 +1,35 @@
+.line {
+  background-image:  url("/assets/images/line.svg");;
+  background-size: cover;
+  height: 0.5em;
+  width: 15em;
+  background-size: cover;
+  margin-bottom: 4em;
+}
+
+.img-collect {
+    height:40%;
+}
+
+.overlay1 {
+    left: -10%;
+    background-size: cover;
+    height: 70vh;
+    width: 70vh;
+    background-image: url("/assets/images/circle.svg");
+    z-index: -1;
+    top: 15%;
+    position: absolute; 
+  }
+
+  .overlay2 {
+    left: 20%;
+    height: 80%;
+    width: 60%;
+    background-image: url("/assets/images/accounting_dots.svg");
+    background-repeat: no-repeat;
+    top: 65%;
+    position: absolute; 
+    z-index: -1;
+  }
+ 
