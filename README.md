@@ -1,3 +1,8 @@
+**#Website Preview**
+
+Please visit src- app - assets - video folder to have a quick preview for the website.
+Note : The website is made only from assessment purpose
+
 # OpenBank
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.0.
